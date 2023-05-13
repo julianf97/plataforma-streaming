@@ -1,5 +1,7 @@
 'use client';
+import SearchBar from '../components/SearchBar/SearchBar';
 import { Container, Parrafo } from './styled';
+
 
 export default function Home() {
   return (
@@ -11,6 +13,7 @@ export default function Home() {
         <div>2</div>
         <div>3</div>
       </Container>
+      <SearchBar/>
     </main>
   );
 }
