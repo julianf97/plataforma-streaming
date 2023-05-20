@@ -1,3 +1,5 @@
+// TODO -> delete this file since it was only an example
+
 import Styled from 'styled-components';
 
 export const Parrafo = Styled.p`
