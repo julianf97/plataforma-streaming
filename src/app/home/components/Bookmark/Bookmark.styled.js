@@ -10,6 +10,12 @@ export const BookmarkButton = styled.button`
   justify-content: center;
   align-items: center;
   position: relative;
-  right: 22px;
-  top: 2px;
+  right: 30px;
+  top: 10px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: black;
+    transform: scale(1.1);
+  }
 `;
