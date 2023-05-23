@@ -22,11 +22,13 @@ export const MovieInfo = styled.section`
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 8px;
+  color: #7A7C86;
 `;
 
 export const MovieInfoTypography = styled.p`
   all: unset;
   margin-top: 4px;
+  color: #ffffff9a;
 `;
 
 export const MovieTitle = styled.h1`
@@ -35,4 +37,5 @@ export const MovieTitle = styled.h1`
   font-size: 11px;
   font-weight: 600px;
   margin: 0px;
+  color: #fff;
 `;
