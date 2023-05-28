@@ -2,7 +2,6 @@ import React from 'react';
 import { SearchBarContainer, SearchBarInput } from './SearchBar.styled';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
-import "./searchBar.css"
 
 
 export default function SearchBar() {
