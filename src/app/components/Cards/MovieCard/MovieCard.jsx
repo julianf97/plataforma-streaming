@@ -37,3 +37,6 @@ export default function MovieCard({
     </MovieContainer>
   );
 }
+
+
+
