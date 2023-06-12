@@ -9,6 +9,7 @@ import {
 } from './MovieCard.styled';
 import Bookmark from '../../Bookmark';
 import { DUMMY_IMAGE } from './dummyImage';
+import { useMoviesAndSeries } from '@/app/provider';
 
 export default function MovieCard({
   year,
@@ -19,6 +20,8 @@ export default function MovieCard({
 }) {
   const safeAlt = title || 'UNKNOWN';
   const safeImg = imageSrc || DUMMY_IMAGE;
+
+  const { movies } = useMoviesAndSeries();
 
   return (
     <MovieContainer>
