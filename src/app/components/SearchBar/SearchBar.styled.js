@@ -1,34 +1,28 @@
-import { styled } from 'styled-components'
-
+import styled from 'styled-components';
 
 export const SearchBarContainer = styled.div`
-    width: 100%;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    .lupa{
-        color: #fff;
-        font-size: 1.2rem;
-        margin-left: 10px;
-        margin-bottom: 2px;
-    }
-`
-
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+`;
 
 export const SearchBarInput = styled.input`
-    width: 200px;
-    height: 100%;
-    display: flex;
-    border-radius: 0px 20px 20px 0px;
+  width: 200px;
+  height: 100%;
+  display: flex;
+  border-radius: 0px 20px 20px 0px;
+  outline: 0;
+  border: 0;
+  color: #fff;
+  padding-left: 15px;
+
+  &:focus {
     outline: 0;
     border: 0;
-    color: #fff;
-    padding-left: 15px;
-    &:focus {
-        outline: 0;
-        border: 0;
-    }
-    &::placeholder { 
+  }
+
+  &::placeholder {
     color: #ffffff9d;
-    }
-`
+  }
+`;
