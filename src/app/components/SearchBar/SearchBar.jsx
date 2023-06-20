@@ -1,18 +1,11 @@
 import React from 'react';
-import {
-  SearchBarContainer,
-  Lupa,
-  SearchBarInput,
-  LupaContainer,
-} from './SearchBar.styled';
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { SearchBarContainer, SearchBarInput } from './SearchBar.styled';
+import MagnifyingGlass from '../MagnifyingGlass/MagnifyingGlass';
 
 export default function SearchBar() {
   return (
     <SearchBarContainer>
-      <LupaContainer>
-        <Lupa icon={faMagnifyingGlass} />
-      </LupaContainer>
+      <MagnifyingGlass />
       <SearchBarInput placeholder="Search for movies or TV series"></SearchBarInput>
     </SearchBarContainer>
   );
