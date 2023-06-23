@@ -1,14 +1,13 @@
 "use client"
 import React from 'react';
+import Navbar from './components/Navbar';
 import SearchBar from './components/SearchBar';
-import "./globals.css"
-import MovieCard from './components/Cards/MovieCard/MovieCard';
+import "./globals.css";
 
 export default function App({ children }) {
   return (
     <main>
-        <SearchBar/>
-        <MovieCard/>
+      <Navbar/>
       {children}
     </main>
   );
