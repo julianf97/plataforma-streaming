@@ -12,7 +12,7 @@ export const NavbarContainer = styled.div`
         justify-content: center;
     }
 `
-export const InternoNavbarContainer = styled.div`
+export const NavbarInnerContainer = styled.div`
     @media (max-width: 600px) {
         width: 90%;
         height: 80%;
@@ -21,7 +21,7 @@ export const InternoNavbarContainer = styled.div`
         background-color: #161d2f;
     }
 `
-export const ContenedorIcono = styled.div`
+export const IconContainer = styled.div`
     @media (max-width: 600px) { 
         width: 50px;
         height: 100%;
@@ -29,32 +29,89 @@ export const ContenedorIcono = styled.div`
         background-color: #161d2f;
         justify-content: center;
         align-items: center;
-        border: solid 1px red;
     } 
 `
-export const ContenedorNav = styled.div`
+export const NavContainer = styled.div`
     @media (max-width: 600px) { 
         width: 350px;
         height: 100%;
         display: flex;
         background-color: #161d2f;
-        border: solid 1px red;
+        justify-content: center;
+        align-items: center;
     } 
 `
-export const ContenedorInternoNav = styled.div`
+export const NavInnerContainer = styled.div`
 @media (max-width: 600px) { 
-    border: solid 1px red;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #161d2f;
 } 
 `
 
-export const ContenedorUser= styled.div`
+export const UserContainer = styled.div`
     @media (max-width: 600px) { 
         width: 50px;
         height: 100%;
-        border: solid 1px red;
         display: flex;
         background-color: #161d2f;
     }
 `
 
+export const BorderAllContainer = styled.div `
+@media (max-width: 600px) { 
+    width: 25%;
+    height: 80%;
+    display: flex;
+    background-color: #161d2f;
+    justify-content: center;
+    align-items: center;
+
+}
+`
+export const BorderAllInterno = styled.div `
+@media (max-width: 600px) { 
+    width: 70%;
+    height: 70%;
+    display: flex;
+    background-color: #161d2f;
+    flex-wrap: wrap;
+    margin-top: 6px;
+}
+`
+
+export const BorderAllUp = styled.div `
+@media (max-width: 600px) { 
+    width: 110%;
+    height: 55%;
+    display: flex;
+    background-color: #161d2f;
+    margin-top: 0px;
+}
+`
+export const BorderAllDown = styled.div `
+@media (max-width: 600px) { 
+    width: 100%;
+    height: 55%;
+    display: flex;
+    background-color: #161d2f;
+    margin-top: -3px;
+}
+`
+export const MoviesIconContainer = styled.div `
+@media (max-width: 600px) { 
+    width: 15%;
+    height: 50%;
+    display: flex;
+    background-color: #161d2f;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1px;
+}
+ 
+`
+
+ 
  
