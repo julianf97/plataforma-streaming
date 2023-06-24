@@ -7,12 +7,24 @@ import { MoviesAndSeriesProvider, useMoviesAndSeries } from './provider';
 
 export default function App({ children }) {
   return (
-    <MoviesAndSeriesProvider>
-      <main>
+    <main>
+      <MoviesAndSeriesProvider>
         <SearchBar />
-        <MovieCard />
+        <MovieCard
+          type="tv"
+          imageSrc="/zPmXiPlB9YXT9dtSHzZHQUcpekw.jpg"
+          year="2019"
+          title="Rápido y furioso V"
+          restriction={{ adult: true }}
+        />
+        <MovieCard
+          type="movie"
+          imageSrc="/2I5eBh98Q4aPq8WdQrHdTC8ARhY.jpg"
+          year="2020"
+          title="Mi vecino totoro"
+        />
         {children}
-      </main>
-    </MoviesAndSeriesProvider>
+      </MoviesAndSeriesProvider>
+    </main>
   );
 }
