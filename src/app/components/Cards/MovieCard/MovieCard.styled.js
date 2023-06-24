@@ -22,7 +22,7 @@ export const MovieInfo = styled.section`
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 8px;
-  color: #7A7C86;
+  color: #7a7c86;
 `;
 
 export const MovieInfoTypography = styled.p`
