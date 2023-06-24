@@ -3,11 +3,11 @@ const RESTRICTIONS = {
   PARENTAL_GUIDANCE: 'PG',
 };
 
-const ageRateBuilder = (restriction) => {
+const ageRate = (restriction) => {
   const isRestricted = restriction?.adult;
   return isRestricted
     ? RESTRICTIONS.ADULT_RESTRICTED
     : RESTRICTIONS.PARENTAL_GUIDANCE;
 };
 
-export default ageRateBuilder;
+export default ageRate;

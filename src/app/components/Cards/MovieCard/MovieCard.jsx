@@ -12,7 +12,7 @@ import { DUMMY_IMAGE } from './dummyImage';
 import movieAndTvIconBuilder, {
   MEDIA_TYPES,
 } from './helpers/movieAndTvIconBuilder';
-import ageRateBuilder from './helpers/ageRateBuilder';
+import ageRate from './helpers/ageRate';
 
 export default function MovieCard({
   year,
@@ -27,7 +27,7 @@ export default function MovieCard({
   const BASE_IMG_URL = 'https://image.tmdb.org/t/p/original';
   const icon = movieAndTvIconBuilder(type);
 
-  const ageRate = ageRateBuilder(restriction);
+  const ageRateRestriction = ageRate(restriction);
 
   return (
     <MovieContainer>
@@ -46,7 +46,9 @@ export default function MovieCard({
           {' '}
           {type && icon} {type && MEDIA_TYPES[type]} ·&nbsp;
         </MovieInfoTypography>
-        <MovieInfoTypography>{restriction && ageRate} </MovieInfoTypography>
+        <MovieInfoTypography>
+          {restriction && ageRateRestriction}{' '}
+        </MovieInfoTypography>
       </MovieInfo>
       <MovieTitle>{title && title}</MovieTitle>
     </MovieContainer>
