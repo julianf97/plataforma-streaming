@@ -47,7 +47,7 @@ export default function Navbar() {
           </UserContainer>
         </NavbarInnerContainer>
       </NavbarContainer>
-    </GralContainer >
+    </GralContainer>
   );
 }
 

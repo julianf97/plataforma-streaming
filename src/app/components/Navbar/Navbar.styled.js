@@ -7,6 +7,14 @@ export const GralContainer = styled.div`
         justify-content: center;
         width: 100%;
     }
+    // Desktop
+    @media only screen and (min-width: 1026px) { 
+        display: flex;
+        justify-content: start;
+        width: 100%;
+        height: 100vh;
+    }
+    
 `
 
 export const NavbarContainer = styled.div`
@@ -32,6 +40,19 @@ export const NavbarContainer = styled.div`
         margin-top: 15px;
         border-radius: 8px;
     }
+    // Desktop
+    @media only screen and (min-width: 1026px) { 
+        flex-direction: column;
+        width: 70px;
+        height: 96%;
+        display: flex;
+        align-items: center;
+        background-color: #161d2f;
+        justify-content: center;
+        margin-top: 15px;
+        border-radius: 8px;
+        margin-left: 15px;
+    }
 `
 export const NavbarInnerContainer = styled.div`
     // Mobile
@@ -49,8 +70,14 @@ export const NavbarInnerContainer = styled.div`
         display: flex;
         align-items: center;
         background-color: #161d2f;
-
-
+    }
+    // Desktop
+    @media only screen and (min-width: 1026px) { 
+        width: 90%;
+        height: 95%;
+        display: flex;
+        background-color: #161d2f;
+        flex-direction: column;
     }
 `
 export const IconContainer = styled.div`
@@ -62,6 +89,9 @@ export const IconContainer = styled.div`
         background-color: #161d2f;
         justify-content: center;
         align-items: center;
+        svg{
+            cursor: pointer;
+        }
     } 
     // Ipad
     @media only screen and (min-width:601px) and (max-width:1025px){ 
@@ -71,6 +101,20 @@ export const IconContainer = styled.div`
         background-color: #161d2f;
         justify-content: center;
         align-items: center;
+        svg{
+            cursor: pointer;
+        }
+    }
+    // Desktop
+    @media only screen and (min-width: 1026px) { 
+        height: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg{
+            cursor: pointer;
+        }
     }
 `
 export const NavContainer = styled.div`
@@ -91,7 +135,14 @@ export const NavContainer = styled.div`
         background-color: #161d2f;
         justify-content: center;
         align-items: center;
-
+    }
+    // Desktop
+    @media only screen and (min-width: 1026px) { 
+        display: flex;
+        width: auto;
+        height: 480px;
+        background-color: #161d2f;
+        align-items: start;
     } 
 `
 export const NavInnerContainer = styled.div`
@@ -112,7 +163,14 @@ export const NavInnerContainer = styled.div`
         align-items: center;
         background-color: #161d2f;
         justify-content: center;
-
+    }
+    // Desktop
+    @media only screen and (min-width: 1026px) { 
+        width: 100%;
+        height: 50%;
+        display: flex;
+        background-color: #161d2f;
+        flex-direction: column;
     }
 `
 
@@ -125,6 +183,9 @@ export const UserContainer = styled.div`
         background-color: #161d2f;
         justify-content: center;
         align-items: center;
+        svg{
+            cursor: pointer;
+        }
     }
     // Ipad
     @media only screen and (min-width:601px) and (max-width:1025px){ 
@@ -134,7 +195,21 @@ export const UserContainer = styled.div`
         background-color: #161d2f;
         justify-content: center;
         align-items: center;
-
+        svg{
+            cursor: pointer;
+        }
+    }
+    // Desktop
+    @media only screen and (min-width: 1026px) { 
+        width: 100%;
+        height: 100px;
+        display: flex;
+        background-color: #161d2f;
+        justify-content: center;
+        align-items: center;
+        svg{
+            cursor: pointer;
+        }
     }
 `
 
@@ -148,6 +223,9 @@ export const BorderAllContainer = styled.div `
         justify-content: center;
         align-items: center;
         margin-left: -6px;
+        svg{
+            cursor: pointer;
+        }
     }
     // Ipad
     @media only screen and (min-width:601px) and (max-width:1025px){ 
@@ -158,7 +236,22 @@ export const BorderAllContainer = styled.div `
         margin-left: -6px;
         justify-content: center;
         align-items: center;
-
+        svg{
+            cursor: pointer;
+        }
+    }
+    // Desktop
+    @media only screen and (min-width: 1026px) { 
+        width: 100%;
+        height: 50px;
+        display: flex;
+        background-color: #161d2f;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        svg{
+            cursor: pointer;
+        }
     }
 `
 export const BorderAllInterno = styled.div `
@@ -179,7 +272,15 @@ export const BorderAllInterno = styled.div `
         background-color: #161d2f;
         flex-wrap: wrap;
         margin-top: 6px;
-
+    }
+    // Desktop
+    @media only screen and (min-width: 1026px) { 
+        width: 70%;
+        height: 70%;
+        display: flex;
+        background-color: #161d2f;
+        flex-wrap: wrap;
+        margin-top: 6px;
     }
 `
 
@@ -199,14 +300,23 @@ export const BorderAllUp = styled.div `
         display: flex;
         background-color: #161d2f;
         margin-top: 0px;
-
+    }
+    // Desktop
+    @media only screen and (min-width: 1026px) { 
+        width: 110%;
+        height: 55%;
+        display: flex;
+        background-color: #161d2f;
+        margin-top: 0px;
+        justify-content: center;
+        align-items: center;
     }
 `
 export const BorderAllDown = styled.div `
     // Mobile
     @media (max-width: 600px) { 
         width: 100%;
-        height: 55%;
+        height: 50%;
         display: flex;
         background-color: #161d2f;
         margin-top: -3px;
@@ -218,8 +328,16 @@ export const BorderAllDown = styled.div `
         display: flex;
         background-color: #161d2f;
         margin-top: -3px;
-
-
+    }
+    // Desktop
+    @media only screen and (min-width: 1026px) { 
+        width: 100%;
+        height: 50%;
+        display: flex;
+        background-color: #161d2f;
+        margin-top: -9px;
+        justify-content: center;
+        align-items: center;
     }
 `
 export const MoviesIconContainer = styled.div `
@@ -233,6 +351,9 @@ export const MoviesIconContainer = styled.div `
         align-items: center;
         margin-top: 1px;
         margin-left: 1px;
+        svg{
+            cursor: pointer;
+        }
     }
     // Ipad
     @media only screen and (min-width:601px) and (max-width:1025px){ 
@@ -244,7 +365,22 @@ export const MoviesIconContainer = styled.div `
         align-items: center;
         margin-top: 1px;
         margin-left: 1px;
-
+        svg{
+            cursor: pointer;
+        }
+    }
+    // Desktop
+    @media only screen and (min-width: 1026px) { 
+        width: 100%;
+        height: 50px;
+        display: flex;
+        background-color: #161d2f;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        svg{
+            cursor: pointer;
+        }
     } 
 `
 export const TVcontainer = styled.div `
@@ -258,6 +394,9 @@ export const TVcontainer = styled.div `
         align-items: center;
         margin-top: 1px;
         margin-left: 15px;
+        svg{
+            cursor: pointer;
+        }
     }
     // Ipad
     @media only screen and (min-width:601px) and (max-width:1025px){ 
@@ -269,8 +408,23 @@ export const TVcontainer = styled.div `
         align-items: center;
         margin-top: 1px;
         margin-left: 15px;
-
+        svg{
+            cursor: pointer;
+        }
     } 
+    // Desktop
+    @media only screen and (min-width: 1026px) { 
+        width: 100%;
+        height: 50px;
+        display: flex;
+        background-color: #161d2f;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        svg{
+            cursor: pointer;
+        }
+    }
 `
 export const BookMarkContainer = styled.div `
     // Mobile
@@ -283,6 +437,9 @@ export const BookMarkContainer = styled.div `
         align-items: center;
         margin-top: 1px;
         margin-left: 12px;
+        svg{
+            cursor: pointer;
+        }
     }
     // Ipad
     @media only screen and (min-width:601px) and (max-width:1025px){ 
@@ -294,7 +451,22 @@ export const BookMarkContainer = styled.div `
         align-items: center;
         margin-top: 1px;
         margin-left: 25px;
-
+        svg{
+            cursor: pointer;
+        }
+    }
+    // Desktop
+    @media only screen and (min-width: 1026px) { 
+        width: 100%;
+        height: 50px;
+        display: flex;
+        background-color: #161d2f;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        svg{
+            cursor: pointer;
+        }
     }   
 `
 
