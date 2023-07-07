@@ -1,11 +1,11 @@
 import React from 'react';
 import { GralContainer, IconContainer, NavContainer, NavbarInnerContainer, NavbarContainer, UserContainer, NavInnerContainer, BorderAllContainer, MoviesIconContainer, BorderAllInterno, BorderAllUp, BorderAllDown, TVcontainer, BookMarkContainer } from './Navbar.styled';
 import ClapperBoard from '../ClapperBoard/ClapperBoard';
-import Square from '../Square/Square';
+import SquareIcon from '../SquareIcon/SquareIcon';
 import Film from '../Film/Film';
-import TV from '../TV/TV'
 import BookMark from '../BookMark/BookMark';
 import IconUser from '../IconUser/IconUser';
+import TVIcon from '../TV/TVIcon';
 
 
 
@@ -24,10 +24,10 @@ export default function Navbar() {
               <BorderAllContainer>
                 <BorderAllInterno>
                   <BorderAllUp>
-                    <Square/><Square/>
+                    <SquareIcon/><SquareIcon/>
                   </BorderAllUp>
                   <BorderAllDown>
-                    <Square/><Square/>
+                    <SquareIcon/><SquareIcon/>
                   </BorderAllDown>
                 </BorderAllInterno>
               </BorderAllContainer>
@@ -35,7 +35,7 @@ export default function Navbar() {
                 <Film/>
               </MoviesIconContainer>
               <TVcontainer>
-                <TV/>
+                <TVIcon/>
               </TVcontainer>
               <BookMarkContainer>
                 <BookMark/>
