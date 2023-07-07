@@ -4,7 +4,7 @@ import ClapperBoard from '../ClapperBoard/ClapperBoard';
 import SquareIcon from '../SquareIcon/SquareIcon';
 import Film from '../Film/Film';
 import BookMark from '../BookMark/BookMark';
-import IconUser from '../IconUser/IconUser';
+import UserIcon from '../UserIcon/UserIcon';
 import TVIcon from '../TV/TVIcon';
 
 
@@ -43,7 +43,7 @@ export default function Navbar() {
             </NavInnerContainer>
           </NavContainer>
           <UserContainer>
-            <IconUser/>
+            <UserIcon/>
           </UserContainer>
         </NavbarInnerContainer>
       </NavbarContainer>
