@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import Navbar from './components/Navbar';
 import SearchBar from './components/SearchBar';
 import './globals.css';
 import MovieCard from './components/Cards/MovieCard/MovieCard';
@@ -9,7 +10,8 @@ export default function App({ children }) {
   return (
     <main>
       <MoviesAndSeriesProvider>
-        <SearchBar />
+        <Navbar/>
+        <SearchBar/>
         <MovieCard
           type="tv"
           imageSrc="/zPmXiPlB9YXT9dtSHzZHQUcpekw.jpg"
