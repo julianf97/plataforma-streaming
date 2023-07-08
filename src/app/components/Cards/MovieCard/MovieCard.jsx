@@ -9,6 +9,7 @@ import {
 } from './MovieCard.styled';
 import Bookmark from './icons/Bookmark';
 import { DUMMY_IMAGE } from './dummyImage';
+import { useMoviesAndSeries } from '@/app/provider';
 import movieAndTvIconBuilder, {
   MEDIA_TYPES,
 } from './helpers/movieAndTvIconBuilder';
@@ -24,6 +25,7 @@ export default function MovieCard({
   const safeAlt = title || 'UNKNOWN';
   const safeImg = imageSrc || DUMMY_IMAGE;
 
+  const { movies } = useMoviesAndSeries();
   const BASE_IMG_URL = 'https://image.tmdb.org/t/p/original';
   const icon = movieAndTvIconBuilder(type);
 
