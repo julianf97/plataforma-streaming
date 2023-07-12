@@ -6,18 +6,22 @@ import Film from '../Film/Film';
 import BookMark from '../BookMark/BookMark';
 import UserIcon from '../UserIcon/UserIcon';
 import TVIcon from '../TV/TVIcon';
+import Link from 'next/link';
 
 
 
 export default function Navbar() {
-
   
   return (
     <GralContainer>
       <NavbarContainer>
         <NavbarInnerContainer>
           <IconContainer>
-            <ClapperBoard/>
+            {
+              <Link href="/">
+                <ClapperBoard/>
+              </Link>
+            }
           </IconContainer>
           <NavContainer>
             <NavInnerContainer>
@@ -32,18 +36,34 @@ export default function Navbar() {
                 </BorderAllInterno>
               </BorderAllContainer>
               <MoviesIconContainer>
-                <Film/>
+                {
+                  <Link href="/movies">
+                    <Film/>
+                  </Link>
+                }
               </MoviesIconContainer>
               <TVcontainer>
-                <TVIcon/>
+                {
+                  <Link href="/tvseries">
+                    <TVIcon/>
+                  </Link>
+                }
               </TVcontainer>
               <BookMarkContainer>
-                <BookMark/>
+                {
+                  <Link href="/save">
+                    <BookMark/>
+                  </Link>
+                }
               </BookMarkContainer>
             </NavInnerContainer>
           </NavContainer>
           <UserContainer>
-            <UserIcon/>
+            {
+              <Link href="/userprofile">
+                <UserIcon/>
+              </Link>
+            }
           </UserContainer>
         </NavbarInnerContainer>
       </NavbarContainer>
