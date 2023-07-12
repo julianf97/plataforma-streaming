@@ -9,7 +9,6 @@ export default function App({ children }) {
   return (
     <main>
       <MoviesAndSeriesProvider>
-        <SearchBar/>
         <MovieCard
           type="tv"
           imageSrc="/zPmXiPlB9YXT9dtSHzZHQUcpekw.jpg"
